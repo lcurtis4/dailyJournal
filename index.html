@@ -6,47 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<main>
     <h2>Daily Journal</h2>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of Entry
-                <input type="date" name="journalDate" id="journalDate">
-            </label>        
-        </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
-            <label for="conceptsCovers">Concepts Covered
-                <input type="text" name="conceptsCovered" id="conceptsCovered">
-            </label>
-        </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
-            <label for="journalEntry">Journal Entry
-                <textarea name="journalEntry" id="journalEntry" cols="" rows=""></textarea>
-            </label>
-        </fieldset>
-    </form>
+    <article class = "currentEntry">
+        <form action="">
+                <fieldset>
+                    <label for="journalDate">Date of Entry</label>
+                    <input type="date" name="journalDate" id="journalDate">     
+                </fieldset>
+        </form>
         <form action="">
             <fieldset>
-                <label for="moodForDay">Mood-o-Day
-                    <select name="moodForDay" id="moodForDay">
+                <label for="conceptsCovers">Concepts Covered </label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="journalEntry" id="journalEntry" cols="" rows=""></textarea>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="moodForDay">Mood-o-Day</label>
+                <select name="moodForDay" id="moodForDay">
                     <option value="Got it">Got it</option>
                     <option value="kinda">needs work</option>
                     <option value="nope">eror 404: concept not found</option>
-                    </select>
-                </label>
+                 </select>
             </fieldset>
         </form>
-    <form action="">
-        <fieldset>
-            <label for="submitButton">
+        <form action="">
+            <fieldset>
+                <label for="submitButton"></label>
                 <button>Submit</button>
-            </label>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </article>
 <script type="module" src="./scripts/main.js"></script>
-</body>
+</main>
 </html>
